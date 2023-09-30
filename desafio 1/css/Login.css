@@ -1,0 +1,108 @@
+/*
+    TAG (Button, body, input)
+
+    Classe (.titulo.grupo)
+
+    Id (#btn-entrar)
+
+    Seletor (Tudo junto e misturado) 
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --cor-primaria: #303F9F;
+    --cor-secundaria: #3F51B5;
+}
+
+
+
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.grupo{
+    margin-top: 20px;
+}
+
+.caixa-login{
+    width: 250px;
+    height: auto;
+    border: 1px solid #ddd;
+    margin: auto;
+    margin-top: 70px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.titulo-login{
+    text-align: center;
+    color: var(--cor-primaria);
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+label{
+    font-size: 15px;
+}
+
+input,
+button#btn-entrar{
+    padding: 8px;
+    width: 100%;
+    border-radius: 2px;
+    border: 2px solid #ddd;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#btn-entrar{
+    margin-top: 10px;
+    background-color: #303F9F;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+
+#btn-entrar:hover {
+    cursor: pointer;
+    background-color: var(--cor-secundaria);
+}
+
+.esqueci-minha-senha{
+    text-align: right;
+    font-style: italic;
+    margin-top: 3px;
+}
+
+.esqueci-minha-senha > a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+table.table{
+    box-shadow: 0 0 10px 0 rgb(50 50 50 / 82%);
+}
+
+
+table.table>thead>tr th{
+    background-color: #eee;
+}
+button.btn{
+    min-width: 80px;
+}
+
+/* Override */
+/* .modal-dialog{
+    max-width: 700px;
+} */
