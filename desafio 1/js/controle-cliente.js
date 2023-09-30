@@ -24,17 +24,15 @@ btnAdicionar.addEventListener('click', () =>{
 })
 
 btnSalvar.addEventListener('click', () => {
-    // 1° Capturar os dados do modal
+    
     let cliente = obterClientesdoModal();
-    // 2° Se os campos obrigatorios foram preenchidos
+    
     if(!cliente.cpfOuCnpj || !cliente.email){
         alert("E-mail e CPF são obrigatórios.");
         return;
     }
 
-    // PAREI EM 53:14
     
-    // 3° Enviar o cadastro
 
     if(modoEdicao ){
         atualizarClienteBackEnd(cliente);
@@ -139,7 +137,7 @@ function criarLinhaNaTabela(cliente) {
                             <button onclick = "excluirCliente(${cliente.id})" class="btn btn-outline-primary btn-sm mr-3">Excluir</button>`
 
 
-    // 4° Adicionar as TDs dentro da linha que criei OK
+    
     tr.appendChild(tdId);
     tr.appendChild(tdNome);
     tr.appendChild(tdCPF);
@@ -148,13 +146,13 @@ function criarLinhaNaTabela(cliente) {
     tr.appendChild(tdTelefone);
     tr.appendChild(tdAcoes);
 
-    // 5° Adicionar a linha na tabela
+    
     tabelaCliente.appendChild(tr);
 }
 
 function popularTabela(clientes) {
 
-    // limpar a tabela...
+    
     tabelaCliente.textContent = "";
 
     clientes.forEach(cliente => {
